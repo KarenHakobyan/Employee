@@ -1,0 +1,47 @@
+.customize-task-details {
+  .tab-item-wrapper {
+    .text-center {
+      margin-top: 0 !important;
+    }
+    &.active {
+      .mt-5 {
+        margin-top: 0 !important;
+      }
+      .mb-spacing-6-x2 {
+        margin-bottom: 1rem !important;
+      }
+    }
+  }
+
+  .p-4 {
+    padding: 1.2rem 1.4rem !important;
+  }
+  .my-3 {
+    margin-top: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  .mb-5,
+  .my-5 {
+    margin-bottom: 1rem !important;
+  }
+  .m-4 {
+    margin: 1.2rem !important;
+  }
+  .shadow-xxl {
+    box-shadow: none;
+  }
+  .font-size-lg {
+    font-size: 1rem !important;
+  }
+
+  .MuiGrid-item .justify-content-between {
+    & > div:first-of-type {
+      text-align: left;
+      white-space: nowrap;
+    }
+    & > div:last-of-type {
+      text-align: right;
+      max-width: 70%;
+    }
+  }
+}
