@@ -1,0 +1,98 @@
+//Color
+@import './helpers/colors';
+
+// Core
+@import 'core';
+
+// Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700&display=swap');
+
+// Widgets
+
+@import 'widgets';
+
+// Components
+
+@import 'components';
+
+// Layout Components
+
+@import 'layout-components';
+
+// Layout Blueprints
+
+@import 'layout-blueprints';
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.font-22 {
+  font-size: 22px;
+}
+
+.textarea {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.date-picker-error {
+  color: $red;
+  font-size: 14px;
+}
+
+.min-width-120 {
+  min-width: 120px;
+}
+
+.min-width-150 {
+  min-width: 150px;
+}
+
+.max-width-120 {
+  max-width: 120px;
+}
+
+// Ripple effect start
+.ripple {
+  position: relative;
+
+  &::after {
+    animation: ripple 1s 1s ease-out infinite;
+    border: solid 4px $dark-blue;
+    border-radius: 1em;
+    bottom: 0;
+    box-sizing: border-box;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    border-radius: 2em;
+    opacity: 0;
+    transform: scale(2);
+  }
+}
